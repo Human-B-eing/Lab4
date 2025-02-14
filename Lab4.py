@@ -41,8 +41,11 @@ def print_prime_factors (n):
                 print(f"{i}")
             elif n % i == 0:
                 while n % i == 0:
-                    n = n // i
-                    print(f"{i} * ", end = "")
+                    if n / i == 1:
+                        print(f"{i}")
+                    else:
+                        n = n // i
+                        print(f"{i} * ", end = "")
 
 
 
