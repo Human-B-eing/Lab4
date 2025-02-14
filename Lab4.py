@@ -33,7 +33,9 @@ def is_prime (n):
 
 def print_prime_factors (n):
     print(f"{n} =", end = " ")
-    if n > 1:
+    if n == 2:
+        print(f"{n} = 2")
+    elif n > 1:
         for i in range(2, n):
             if n / i == 1:
                 print(f"{i}")
